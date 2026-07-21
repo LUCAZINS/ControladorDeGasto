@@ -1,4 +1,5 @@
-# MaxiProd
+# Controle de Gastos Residenciais
+
 
 Aplicação web para gerenciamento de pessoas e transações financeiras. O sistema possui áreas separadas para administradores e pessoas usuárias, com autenticação por cookie e controle de acesso por perfil.
 
