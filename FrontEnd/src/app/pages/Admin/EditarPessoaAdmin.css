@@ -1,0 +1,34 @@
+.editar-pessoa-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.formulario-pessoa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulario-pessoa input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.acoes-formulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mensagem-erro {
+  margin-bottom: 16px;
+  padding: 12px;
+  color: #b42318;
+  background-color: #fee4e2;
+  border-radius: 5px;
+}

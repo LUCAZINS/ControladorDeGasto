@@ -1,0 +1,13 @@
+.botaosair{ 
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  background: #dc3545;
+  cursor: pointer;
+position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}

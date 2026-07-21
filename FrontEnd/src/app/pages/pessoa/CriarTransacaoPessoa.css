@@ -1,0 +1,203 @@
+.formulario-transacao-container {
+  width: 100%;
+  max-width: 760px;
+  padding: 32px;
+  color: #111827;
+}
+
+.formulario-transacao-container * {
+  box-sizing: border-box;
+}
+
+.cabecalho-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.cabecalho-formulario h2 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 28px;
+}
+
+.cabecalho-formulario p {
+  margin: 0;
+  color: #64748b;
+}
+
+.formulario-transacao {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(15 23 42 / 5%);
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-formulario label,
+.campo-tipo legend {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.campo-formulario input {
+  width: 100%;
+  padding: 12px 14px;
+  color: #111827;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.campo-formulario input::placeholder {
+  color: #94a3b8;
+}
+
+.campo-formulario input:focus {
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgb(8 145 178 / 15%);
+}
+
+.campo-tipo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.campo-tipo legend {
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+}
+
+.opcao-tipo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  color: #334155;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.opcao-tipo input {
+  width: 17px;
+  height: 17px;
+}
+
+.opcao-tipo span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.opcao-tipo strong {
+  color: #111827;
+}
+
+.opcao-tipo small {
+  color: #64748b;
+}
+
+.opcao-tipo.receita.selecionada {
+  background: #f0fdf4;
+  border-color: #16a34a;
+}
+
+.opcao-tipo.despesa.selecionada {
+  background: #fef2f2;
+  border-color: #dc2626;
+}
+
+.acoes-formulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 6px;
+}
+
+.acoes-formulario button,
+.botao-voltar {
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botao-voltar,
+.botao-cancelar {
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+}
+
+.botao-salvar {
+  color: #ffffff;
+  background: #0891b2;
+  border: 1px solid #0891b2;
+}
+
+.botao-salvar:hover {
+  background: #0e7490;
+}
+
+.botao-voltar:hover,
+.botao-cancelar:hover {
+  background: #f8fafc;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.mensagem-erro {
+  padding: 13px 16px;
+  margin-bottom: 20px;
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+}
+
+@media (max-width: 600px) {
+  .formulario-transacao-container {
+    padding: 20px;
+  }
+
+  .cabecalho-formulario {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .campo-tipo {
+    grid-template-columns: 1fr;
+  }
+
+  .acoes-formulario {
+    flex-direction: column-reverse;
+  }
+
+  .acoes-formulario button {
+    width: 100%;
+  }
+}

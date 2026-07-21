@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #8b8e9038;
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  color: #0000;
+  background: #5e5e5f68;
+}
+
+.sidebar-logo {
+  margin-bottom: 32px;
+}
+
+.sidebar-logo h2 {
+  margin: 0 0 4px;
+}
+
+.sidebar-logo span {
+  color: #aab7c4;
+  font-size: 13px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-menu a {
+  padding: 13px 16px;
+  border-radius: 7px;
+  color: #dce5ec;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar-menu a:hover {
+  background: #07070700;
+}
+
+.sidebar-menu a.active {
+  color: white;
+  background: #5c5e6000;
+}
+
+.botaosair {
+  padding: 12px;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  background: #dc3545;
+  cursor: pointer;
+}
+
+.conteudo {
+  width: calc(100% - 240px);
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.cabecalho {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: white;
+  border-bottom: 1px solid #e1e5e8;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.pagina {
+  padding: 30px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .sidebar-logo span,
+  .sidebar-menu a {
+    font-size: 0;
+  }
+
+  .conteudo {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+}
