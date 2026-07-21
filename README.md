@@ -41,7 +41,7 @@ Exemplo para desenvolvimento local:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Port=5432;Database=maxiprod;Username=postgres;Password=SUA_SENHA"
+    "DefaultConnection": "Host=localhost;Port=5432;Database=ControladorDeGasto;Username=postgres;Password=SUA_SENHA"
   }
 }
 ```
@@ -89,7 +89,7 @@ Cada pessoa autenticada acessa somente suas próprias movimentações. O backend
 ## Estrutura geral
 
 ```text
-MaxiProd/
+Pasta/
 ├── Backend/                 # API ASP.NET Core
 ├── Frontend/                # Aplicação React + TypeScript
 │   ├── src/
@@ -121,7 +121,7 @@ Instale:
 Crie um banco de dados:
 
 ```sql
-CREATE DATABASE maxiprod;
+CREATE DATABASE ControladorDeGasto;
 ```
 
 Depois, configure a string de conexão do backend no `appsettings.Development.json`.
